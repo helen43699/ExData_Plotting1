@@ -18,6 +18,7 @@ plot(data$DT, data$Sub_metering_1, type="l", col=lineColor[1], xlab="", ylab="En
 lines(data$DT,data$Sub_metering_2,col=lineColor[2])
 lines(data$DT,data$Sub_metering_3,col=lineColor[3])
 legend("topright", legend=label, col=lineColor, lty="solid")
+plot(data$DT, data$Global_reactive_power, type="l", col="black", xlab="datetime", ylab="Global_reactive_power")
 dev.copy(png, file="plot4.png", width=480, height=480)
 dev.off()
 
